@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Sample Translator</h1>
+<p>Sample Translater for Coding application. Translation will always equal "cout" for now.</p>
+<form>
+<table style="width:100%">
+  <tr>
+    <td>From 
+  <select name="languages" id="from">
+  <option value="c++">C++</option>
+  <option value="java">Java</option>
+  <option value="c">C</option>
+  <option value="c#">C#</option>
+  <option value="python">Python</option>
+</select>
+</td>
+    <td>To <select name="languages" id="to">
+  <option value="c++">C++</option>
+  <option value="java">Java</option>
+  <option value="c">C</option>
+  <option value="c#">C#</option>
+  <option value="python">Python</option>
+</select>
+</td> 
+  </tr>
+ <td><input type="text" placeholder="enter from keyword" id="word"></td>
+    <td><input type="text" id="translation">
+</td>
+  <tr>
+</table>
+
+<button type="button" onclick="getTranslation()">Translate!</button>
+</form>
+
+<br> <br>
+Testing to make sure the user input was captured<br>
+<p id="displayword"></p> 
+<p id="displayfrom"></p> 
+<p id="displayto"></p>
+
+
+
+<script>
+   function executeTranslation(from, to, word){
+       var result = "cout";
+       return result;
+     }
+</script>
+
+<script>
+
+function getTranslation() {
+    var from, to, word, translation;
+
+    // Get the values inputted by the user
